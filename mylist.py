@@ -40,4 +40,5 @@ print(mylist2)
 print(mylist2.count(1))
 # list delete 
 del mylist2[0]
+print(mylist2)
 
