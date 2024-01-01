@@ -1,1 +1,1 @@
-# pythonpractice
+# 100 days of Python practice
