@@ -26,12 +26,12 @@
 print("Welcome to the Brand name Generator....")
 
 # 2. Ask the user for the city they grewup 
-city = input("Which city did you grewup ?")
+city = input("Which city did you grewup ?\n")
 
 #  3. Ask the user their pet name
-pet = input("What is your pet name ?")
+pet = input("What is your pet name ?\n")
 
 #  4. combine the city name and pet name to make a Brand name
 
-brand = city + pet 
-print("The brand name we suggested is ", brand)
+# brand = city + pet 
+print("The brand name we suggested is " + city + " " + pet)
