@@ -51,3 +51,11 @@ def mutate(a_list):
     print(b_list)
 
 mutate([1,2,3,5,8,13])
+
+# Debugging tips
+# - Take a Break 
+# - Ask a Friend
+# - Run the code often
+# - Ask stackOverflow 
+# - Ask ChatGpt
+ 
