@@ -21,7 +21,7 @@ vs = """
 |___/____(_)
 """
 
-from gamedata import data
+from Day14.gamedata import data
 import random
 import os
 def account_details(account):
