@@ -32,15 +32,16 @@ Coffee = CoffeeMaker()
 while can_make:
     user_choice = input(f"Which do you want? ({Menu().get_items()}): ")
     items = Menu().find_drink(user_choice)
-
+    
     if user_choice == 'report':
         f"{Coffee.report()}\n{Machine.report()}"
     else:
-        if Coffee.is_resource_sufficient(items)== True:
-            Machine.make_payment(items.cost)
-            Coffee.make_coffee(items)
-        else:
-            can_make = False
+        if items:
+            if Coffee.is_resource_sufficient(items)== True:
+                Machine.make_payment(items.cost)
+                Coffee.make_coffee(items)
+            else:
+                can_make = False
 # if user_choice == 'report':
 #     f"{CoffeeMaker().report()}\n{MoneyMachine().report()}"
 # else:
