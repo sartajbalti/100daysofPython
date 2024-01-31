@@ -26,12 +26,12 @@
 # print(user_2.followers)
 
 # Quiz Game 
-from data import question_data
+from data import question_data1
 from question_model import Question
 from quiz_brain import Quiz
 question_bank =[]
-for data in question_data:
-    new_question = Question(data['text'],data['answer'])
+for data in question_data1:
+    new_question = Question(data['question'],data['correct_answer'])
     question_bank.append(new_question)
 # print(question_bank[0].text)
 quiz= Quiz(question_bank)
