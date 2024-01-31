@@ -26,22 +26,26 @@ print(table)
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
-can_make = True
+is_on = True
 Machine = MoneyMachine()
 Coffee = CoffeeMaker()
-while can_make:
-    user_choice = input(f"Which do you want? ({Menu().get_items()}): ")
-    items = Menu().find_drink(user_choice)
+menu = Menu()
+while is_on:
+    options = menu.get_items()
+    user_choice = input(f"Which do you want? ({options}): ")
     
-    if user_choice == 'report':
-        f"{Coffee.report()}\n{Machine.report()}"
+    if user_choice =="off":
+        is_on=False
+    elif user_choice == 'report':
+        Coffee.report()
+        Machine.report()
     else:
+        items = menu.find_drink(user_choice)
         if items:
-            if Coffee.is_resource_sufficient(items)== True:
-                Machine.make_payment(items.cost)
+            if Coffee.is_resource_sufficient(items) and Machine.make_payment(items.cost):
                 Coffee.make_coffee(items)
-            else:
-                can_make = False
+        # else:
+        #     can_make = False
 # if user_choice == 'report':
 #     f"{CoffeeMaker().report()}\n{MoneyMachine().report()}"
 # else:
