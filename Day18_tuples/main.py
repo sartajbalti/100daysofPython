@@ -94,6 +94,6 @@ direc = [0,90,180,270]
 for _ in range(36):
     timmy.color(set_random_color())
     timmy.circle(100)
-    timmy.left(10)
+    timmy.left(20)
 screen = Screen()
 screen.exitonclick()
