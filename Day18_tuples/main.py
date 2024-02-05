@@ -91,9 +91,12 @@ direc = [0,90,180,270]
 #     timmy.forward(30)
 #     timmy.setheading(angle)
 
-for _ in range(36):
-    timmy.color(set_random_color())
-    timmy.circle(100)
-    timmy.left(20)
+def make_spiral(size):
+    for _ in range(72):
+        timmy.color(set_random_color())
+        timmy.circle(100)
+        timmy.left(size)
+make_spiral(5)
+
 screen = Screen()
 screen.exitonclick()
