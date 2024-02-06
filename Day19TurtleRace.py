@@ -1,5 +1,9 @@
 # Event Listner
 # turtle
+import os
+
+os.environ["TK_SILENCE_DEPRECATION"] = "1"
+
 from turtle import Turtle, Screen, TK
 # t = Turtle()
 def move_f():
