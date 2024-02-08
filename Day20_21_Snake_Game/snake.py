@@ -66,5 +66,6 @@ class Snake:
             if self.head.distance(segment) < 10:  # Adjust this value as needed
                 return True
         return False
+    
 
 
