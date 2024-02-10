@@ -4,7 +4,6 @@ class Breakline(Turtle):
         super().__init__()
         self.speed(0)  # Set the fastest drawing speed
         self.color('white')
-        self.shapesize(stretch_wid=6,stretch_len=6)
 
         # Move the turtle to the starting position
         self.penup()
