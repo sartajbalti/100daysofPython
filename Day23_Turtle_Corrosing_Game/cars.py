@@ -28,7 +28,7 @@ class Cars(Turtle):
         for car in self.car_list:
             car.forward(self.car_speed)
     def level_up(self):
-        self.car_speed+=10
+        self.car_speed+=5
 
 
     

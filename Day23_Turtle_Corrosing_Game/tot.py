@@ -7,7 +7,7 @@ class Tot(Turtle):
         self.color('green')
         self.setheading(90)
         self.penup()
-        self.goto(0,-230)
+        self.goto(0,-280)
 
     def up(self):
         self.penup()
